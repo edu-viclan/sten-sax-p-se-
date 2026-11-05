@@ -1,5 +1,3 @@
-import random
-ops = ["sten", "sax", "påse"]
 
 def inmat(txt):
     while True:
@@ -18,11 +16,3 @@ while True:
             print("Ange minst 1 omgång!")
     except ValueError:
         print("ogiltig inmatning, skriv ett heltal")
-
-for i in range(x_omgångar):
-    print(f"Omgång {i+1}")
-    val = random.randint(0,2)
-    print(ops[val])
-    drag = inmat("välj sten sax eller påse -->")
-    if val == 0 and drag == "sten":
-        print("ja")
